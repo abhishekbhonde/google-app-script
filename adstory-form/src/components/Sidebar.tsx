@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 const Sidebar = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-[300px] h-screen bg-black p-10 border-r-2">
-      <h1 className="text-white text-[50px] font-bold">Adstory</h1>
+    <div className="w-[300px] h-screen bg-white p-8 border-r-2 border-gray-200 shadow-lg">
+      <h1 className="text-black text-4xl font-semibold mb-10">Adstory</h1>
       <button
         onClick={() => {
           navigate("/form");
         }}
-        className="text-xl font-bold mt-10 text-white hover:bg-gray-700 hover:text-gray-300 w-[200px] text-center p-3 rounded transition-colors"
+        className="w-full text-xl font-semibold text-black bg-gray-100 hover:bg-blue-500 hover:text-white p-4 rounded-lg transition-all duration-300 ease-in-out shadow-sm hover:shadow-lg"
       >
         URL Form
       </button>

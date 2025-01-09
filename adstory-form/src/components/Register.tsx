@@ -1,41 +1,57 @@
-import React from "react";
+import React from 'react';
 
-const Form = () => {
+const Register = () => {
   return (
     <div className="flex items-center justify-center w-full h-screen bg-gradient-to-r from-white to-gray-100 px-4">
       <div className="bg-white p-10 rounded-lg shadow-2xl w-full max-w-lg">
         <h2 className="text-black text-4xl font-semibold mb-8 text-center">
-          User Form
+          Register
         </h2>
         <form className="space-y-8">
-          {/* Name Field */}
+          {/* Email Field */}
           <div>
             <label
-              htmlFor="name"
+              htmlFor="email"
               className="block text-gray-700 text-xl font-medium mb-2"
             >
-              Name
+              Email
             </label>
             <input
-              type="text"
-              id="name"
-              placeholder="Enter your name"
+              type="email"
+              id="email"
+              placeholder="Enter your email"
               className="w-full p-4 rounded-lg bg-gray-50 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
             />
           </div>
 
-          {/* URL Field */}
+          {/* Password Field */}
           <div>
             <label
-              htmlFor="url"
+              htmlFor="password"
               className="block text-gray-700 text-xl font-medium mb-2"
             >
-              URL
+              Password
             </label>
             <input
-              type="url"
-              id="url"
-              placeholder="Enter your URL"
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              className="w-full p-4 rounded-lg bg-gray-50 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+            />
+          </div>
+
+          {/* Confirm Password Field */}
+          <div>
+            <label
+              htmlFor="confirmPassword"
+              className="block text-gray-700 text-xl font-medium mb-2"
+            >
+              Confirm Password
+            </label>
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Confirm your password"
               className="w-full p-4 rounded-lg bg-gray-50 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
             />
           </div>
@@ -45,7 +61,7 @@ const Form = () => {
             type="submit"
             className="w-full py-4 bg-blue-600 text-white font-semibold text-lg rounded-lg hover:bg-blue-700 transition duration-200 ease-in-out transform hover:scale-105"
           >
-            Submit
+            Register
           </button>
         </form>
       </div>
@@ -53,4 +69,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default Register;
